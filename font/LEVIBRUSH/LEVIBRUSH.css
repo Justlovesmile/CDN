@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "LEVIBRUSH";
+  src: url("LEVIBRUSH.woff2") format("woff2"),
+       url("LEVIBRUSH.woff") format("woff"),
+       url("LEVIBRUSH.ttf") format("truetype"),
+       url("LEVIBRUSH.eot") format("embedded-opentype"),
+       url("LEVIBRUSH.svg") format("svg"),
+       url("LEVIBRUSH.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
