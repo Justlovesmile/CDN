@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "JustBrush";
+  src: url("JustBrush.woff2") format("woff2"),
+       url("JustBrush.woff") format("woff"),
+       url("JustBrush.ttf") format("truetype"),
+       url("JustBrush.eot") format("embedded-opentype"),
+       url("JustBrush.svg") format("svg"),
+       url("JustBrush.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
