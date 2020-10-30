@@ -4,4 +4,4 @@
 
 # BLOG
 
-[https://justlovesmile.top](https://justlovesmile.top)
+[https://blog.justlovesmile.top](https://blog.justlovesmile.top)
