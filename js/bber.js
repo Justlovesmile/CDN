@@ -33,7 +33,7 @@ app.auth({
         }
         page++
         Lately({ 'target': '#bber .datatime' });
-        $("#bber a[rel!=link]:has(img)").slimbox();//图片灯箱效果
+        //$("#bber a[rel!=link]:has(img)").slimbox();//图片灯箱效果
     });
   }
   function getSerList(ser){
@@ -58,7 +58,7 @@ app.auth({
         $('html,body').animate({ scrollTop: $('.timeline').offset().top - 20 }, 500)
         $('.load').remove()
         Lately({ 'target': '#bber .datatime' });
-        $("#bber a[rel!=link]:has(img)").slimbox();//图片灯箱效果
+        //$("#bber a[rel!=link]:has(img)").slimbox();//图片灯箱效果
       });
   }
   $('.button-load').click(function(){
@@ -81,15 +81,15 @@ app.auth({
 });
 function urlToLink(str) {
   //去除<img>标签，留 src 链接
-  var re_forimg =/\<[img|IMG].*?src=[\'|\"](https\:\/\/.*?(?:[\.jpg|\.jpeg|\.png|\.gif|\.bmp]))[\'|\"].*?[\/]?>/g;
+  var re_forimg =/\<[img|IMG].*?src=[\'|\"](https\:\/\/.*?(?:[\.jpg|\.jpeg|\.png|\.gif|\.bmp|\.JPG|\.PNG]))[\'|\"].*?[\/]?>/g;
   str =str.replace(re_forimg,'$1');
   //去 ![]() 标签，留图片链接
   var re_formd = /^!\[(.*)\]\((.*)\)/g;
   str = str.replace(re_formd,'$2');
   //处理图片链接，添加 a 标签共添加灯箱效果
-  var re_forpic =/\bhttps?:[^:<>"]*\/([^:<>"]*)(\.(jpeg)|(png)|(jpg)|(webp))/g;
+  var re_forpic =/\bhttps?:[^:<>"]*\/([^:<>"]*)(\.(jpeg)|(png)|(jpg)|(webp)|(PNG)|(JPG)|(gif)|(bmp))/g;
   str =str.replace(re_forpic,function (imgurl) {
-    return '<a href="' + imgurl + '"><img src="' + imgurl + '" /></a>';
+    return '<a data-fancybox="group" data-caption class="fancybox" href="' + imgurl + '"><img src="' + imgurl + '" /></a>';
   });
   //处理普通链接，添加 a 标签供跳转
   var re =/\bhttps?:\/\/(?!\S+(?:jpe?g|png|bmp|gif|webp|gif))\S+/g;
