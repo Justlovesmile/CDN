@@ -25,8 +25,8 @@ function getbbdata(){
       }
       })
       // console.log(fundsArray)
-      saveToLocal.set('zhheo-bb', JSON.stringify(bbArray), 5 / (60 * 24))
-      const data = saveToLocal.get('zhheo-bb');
+      saveToLocal.set('mj-essay', JSON.stringify(bbArray), 5 / (60 * 24))
+      const data = saveToLocal.get('mj-essay');
       generateBBHtml(JSON.parse(data))
   }
   };
