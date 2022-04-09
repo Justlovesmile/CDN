@@ -1,11 +1,17 @@
 {
   "name": "mj-cdn",
+<<<<<<< HEAD
   "version": "1.0.0",
   "description": "20220318",
   "main": "bber.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+=======
+  "version": "1.0.1",
+  "description": "20220319",
+  "main": "bber.js",
+>>>>>>> 503a9592ecbf36444b89193fe9f774b16e70d733
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Justlovesmile/CDN.git"
